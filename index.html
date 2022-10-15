@@ -7,20 +7,24 @@
     <title>Document</title>
     <style>
         .main{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: flexbox;
             margin: auto;
-            accent-color: red;
+            accent-color: rgb(22, 93, 160);
+
         }
+        .main::selection, h1::selection{
+            color: white;
+            background-color: rgb(161, 41, 41);
+        }
+        
     </style>
 </head>
 <body>
     
     <section>
         <div class="main">
-            <h1>This is heading</h1>
-            <input type="text">text  <br>
+            <h1>This is heading</h1> <hr>
+            <input type="text">text  <br> <hr>
             <input type="checkbox" name="check box" id=""> chkbx <br>
             <input type="date"> date <br>
             <input type="radio"> radio <br>
